@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Vitalina Sevastsyanovich](https://up.htmlacademy.ru/htmlcss/15/user/262489).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Злодеев].
 
 ---
 
