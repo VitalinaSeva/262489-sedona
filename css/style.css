@@ -21,3 +21,276 @@ h2 {
   font-weight: bold;
   font-family: "PT Sans Bold", sans-serif;
 }
+.main-header {
+  /* Только для оформления сетки */
+  outline: 1px solid green;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* Только для оформления сетки */
+  outline: 1px solid pink;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container2 {
+  width: 1056px;
+  margin: 0 auto;
+  /* Только для оформления сетки */
+  outline: 3px solid orange;
+}
+
+.container2::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-top {
+  font-size: 0;
+  /* Только для оформления сетки */
+  outline: 1px solid blue;
+}
+
+.main-nav {
+  font-size: 0;
+}
+
+.main-nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-nav-left a {
+  width: 20%;
+  min-height: 56px;
+  font-size: 14px;
+  float: left;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.main-nav-right a {
+  width: 20%;
+  min-height: 56px;
+  font-size: 14px;
+  float: right;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.header-logo {
+  width: 138px;
+  position: absolute;
+  left: 556px;
+}
+
+.header-promo {
+  width: 100%;
+  height: 509px;
+}
+
+main {
+  /* Только для оформления сетки */
+  outline: 1px solid green;
+}
+
+.features {
+  min-height: 840px;
+  margin-bottom: -20px;
+  /* Только для оформления сетки */
+  outline: 1px solid blue;
+}
+
+.intro {
+  height: 215px;
+  margin-top: -16px;
+  /* Только для оформления сетки */
+  outline: 1px solid grey;
+}
+
+.feature {
+  width: 33.333%;
+  height: 256px;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.guide {
+  height: 330px;
+}
+
+.feature-image {
+  width: 66.666%;
+  height: 256px;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.feature,
+.feature-image {
+  display: inline-block;
+  margin-right: -3px;
+  vertical-align: top;
+}
+
+.promo {
+  min-height: 290px;
+  /* Только для оформления сетки */
+  outline: 1px solid blue;
+}
+
+.map {
+  width: 100%;
+  height: 593px;
+}
+
+.form-hotel-search {
+  width: 568px;
+  height: 481px;
+  position: absolute;
+  top: 2082px;
+  left: 356px;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.main-footer {
+  font-size: 0;
+  margin-top: -120px;
+  /* Только для оформления сетки */
+  outline: 1px solid green;
+}
+
+.insta {
+  width: 240px;
+  min-height: 120px;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.social {
+  width: 400px;
+  min-height: 120px;
+  margin-left: 88px;
+  margin-right: 88px;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.developers {
+  width: 240px;
+  min-height: 120px;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.insta,
+.social,
+.developers {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.criteria {
+  font-size: 0;
+  /* Только для оформления сетки */
+  outline: 1px solid blue;
+}
+
+.filter {
+  min-height: 217px;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.filter-infrustructure {
+  width: 241px;
+}
+
+.filter-accomodation {
+  width: 287px;
+  margin-right: 200px;
+}
+
+.filter-price {
+  width: 328px;
+}
+
+.result-sorting {
+  font-size: 0;
+  /* Только для оформления сетки */
+  outline: 1px solid blue;
+}
+
+.result-sorting-tools div {
+  min-height: 86px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.result-sorting-tools {
+  float: left;
+}
+
+.sorting-indicators div {
+  min-height: 86px;
+  width: 20px;
+  font-size: 14px;
+  float: right;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+article {
+  min-height: 152px;
+  /* Только для оформления сетки */
+  outline: 1px solid blue;
+}
+
+.result {
+  margin-bottom: 120px;
+}
+
+.result-image {
+  width: 135px;
+  min-height: 152px;
+  float: left;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.result-image img {
+  margin-top: 32px;
+}
+
+.info-booking {
+  width: 258px;
+  min-height: 152px;
+  float: left;
+  margin-left: 30px;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.result-rating {
+  width: 111px;
+  min-height: 152px;
+  float: right;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
