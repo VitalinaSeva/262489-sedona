@@ -8,25 +8,31 @@
   <body>
     <header class="main-header">
       <div class="container">
+        <div class="container2">
         <div class="header-top">
-          <div class="header-logo">
-            <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
-          </div>
           <nav class="main-nav">
-            <ul>
-              <li><a href="#">Информация</a></li>
-              <li><a href="#">Фото и видео</a></li>
-              <li><a href="#">Карта штата</a></li>
-              <li class="active">Гостиницы</li>
-            </ul>
+            <div class="main-nav-left">
+              <a href="#">Информация</a>
+              <a href="#">Фото и видео</a>
+            </div>
+            <div class="header-logo">
+              <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+            </div>
+            <div class="main-nav-right">
+              <a href="#">Карта штата</a>
+              <a href="#">Гостиницы</a>
+            </div>
           </nav>
         </div>
       </div>
+      </div>
     </header>
+
     <main>
-      <div class="container">
-        <div class="criteria">
-          <form action="#" method="post">
+      <div class="criteria">
+        <div class="container">
+          <div class="container2">
+          <form action="#" method="get">
             <div class="filter filter-infrustructure">
               <h3>Инфраструктура:</h3>
               <input type="checkbox" name="pool" id="pool" checked>
@@ -45,7 +51,8 @@
               <input type="checkbox" name="apartment" id="apartment" checked>
               <label for="apartment">Апартаменты</label>
             </div>
-            <div class="filter-price">
+
+            <div class=" filter filter-price">
               <h3>Стоимость в сутки (Р):</h3>
               <div class="price price-min">
                 от 0
@@ -54,57 +61,66 @@
                 до 3000
               </div>
               <div class="scroll">
-                <div class="scroll-left">
-                </div>
-                </div class="scroll-right">
-                </div>
-            </div>
-            <button type="button" class="show">Показать</button>
-          </form>
-        </div>
-        <div class="result-sorting-tools">
-          <h2>Найдено: 3</h2>
-          <ul class="result-sorting">
-            <li>Сортировка:</li>
-            <li class="active">По цене</li>
-            <li><a href="#" class="sorting-button">По типу</a></li>
-            <li><a href="#" class="sorting-button">По рейтингу</a></li>
-          </ul>
-          <div class="sorting-min-max">
-            <div class="sorting-min active">
-            </div>
-            <div class="sorting-max">
-              <button type="submit"></button>
+                <div class="scroll-left"></div>
+                <div class="scroll-right"></div>
+              </div>
+              <div class="scale"></div>
+              <div class="progress-scale"></div>
+              <div class="show-button">
+                <a class="show">Показать</a>
+              </div>
             </div>
           </div>
+            </div>
+          </form>
         </div>
-        <div class="result">
+      </div>
+
+      <div class="result-sorting">
+        <div class="container">
+          <div class="container2">
+          <div class="result-sorting-tools">
+            <div><h2>Найдено: 3</h2></div>
+            <div>Сортировка:</div>
+            <div class="active">По цене</div>
+            <div><a href="#" class="sorting-button">По типу</a></div>
+            <div><a href="#" class="sorting-button">По рейтингу</a></div>
+          </div>
+          <div class="sorting-indicators">
+            <div class="sorting-min active"></div>
+            <div class="sorting-max"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="container">
+          <div class="container2">
           <article class="result-item">
             <div class="result-image">
               <img src="img/hotelamara.jpg" width="135" height="90" alt="Amara Resort and Spa">
             </div>
-            <div class="result-info">
-              <h2>Amara Resort &amp; Spa</h2>
-              <div class="accomodation-price">
-                <div class="result-accomodation">
-                  Гостиница
-                </div>
-                <div class="result-price">
-                  От 3 500 Р.
+            <div class="info-booking">
+              <div class="result-info">
+                <h2><a href="#">Amara Resort &amp; Spa</a></h2>
+                <div class="accomodation-price">
+                  <span class="result-accomodation">Гостиница</span>
+                  <span class="result-price">От 3 500 Р.</span>
                 </div>
               </div>
               <div class="details-booking">
-                <div class="details">
-                  <a href="#">Подробнее</a>
-                </div>
-                <div class="booking">
-                  <a href="#">Забронировать</a>
-                </div>
+                  <div class="details">
+                    <a href="#">Подробнее</a>
+                  </div>
+                  <div class="booking">
+                    <a href="#">Забронировать</a>
+                  </div>
               </div>
-            </div>
+          </div>
             <div class="result-rating">
               <div class="rating-image">
-                <img src="img/4stars.png" width="89" height="17" alt="Рейтинг 4 звездочки">
+                <img class="rating-image-4" src="img/star.png" width="18" height="17" alt="Рейтинг 4 звездочки">
               </div>
               <div class="rating-number">
                 Рейтинг: 8,5
@@ -115,15 +131,12 @@
             <div class="result-image">
               <img src="img/hoteldesert.jpg" width="135" height="90" alt="Desert Quail Inn">
             </div>
+            <div class="info-booking">
             <div class="result-info">
-              <h2>Desert Quail Inn</h2>
+              <h2><a href="#">Desert Quail Inn</a></h2>
               <div class="accomodation-price">
-                <div class="result-accomodation">
-                  Мотель
-                </div>
-                <div class="result-price">
-                  От 2 000 Р.
-                </div>
+                <span class="result-accomodation">Мотель</span>
+                <span class="result-price">От 2 000 Р.</span>
               </div>
               <div class="details-booking">
                 <div class="details">
@@ -134,9 +147,10 @@
                 </div>
               </div>
             </div>
+          </div>
             <div class="result-rating">
               <div class="rating-image">
-                <img src="img/2stars.png" width="42" height="17" alt="Рейтинг 2 звездочки">
+                <img class="rating-image-2" src="img/star.png" width="18" height="17" alt="Рейтинг 2 звездочки">
               </div>
               <div class="rating-number">
                 Рейтинг: 8,9
@@ -147,15 +161,12 @@
             <div class="result-image">
               <img src="img/hotelvillas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             </div>
+            <div class="info-booking">
             <div class="result-info">
-              <h2>Villas at Poco Diablo</h2>
+              <h2><a href="#">Villas at Poco Diablo</a></h2>
               <div class="accomodation-price">
-                <div class="result-accomodation">
-                  Апартаменты
-                </div>
-                <div class="result-price">
-                  От 4 000 Р.
-                </div>
+                <span class="result-accomodation">Апартаменты</span>
+                <span class="result-price">От 4 000 Р.</span>
               </div>
               <div class="details-booking">
                 <div class="details">
@@ -166,9 +177,10 @@
                 </div>
               </div>
             </div>
+          </div>
             <div class="result-rating">
               <div class="rating-image">
-                <img src="img/3stars.png" width="65" height="17" alt="Рейтинг 3 звездочки">
+                <img class="rating-image-3" src="img/star.png" width="18" height="17" alt="Рейтинг 3 звездочки">
               </div>
               <div class="rating-number">
                 Рейтинг: 9,2
@@ -176,10 +188,13 @@
             </div>
           </article>
         </div>
+        </div>
       </div>
     </main>
+
     <footer class="main-footer">
       <div class="container">
+        <div class="container2">
         <div class="insta">
           <a href="#">#visitsedona</a>
         </div>
@@ -196,6 +211,7 @@
             <img src="img/htmlacademy.png" width="113" height="39" alt="HTML Академия">
           </div>
         </div>
+      </div>
       </div>
     </footer>
   </body>
