@@ -1,33 +1,29 @@
 body {
+  min-width: 768px;
   font-size: 14px;
   line-height: 21px;
-  color: #333333;
   font-weight: normal;
-  font-family: "PT Sans Regular", sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
-h1 {
-  font-size: 30px;
-  line-height: 24px;
-  color: #000000;
-  font-weight: bold;
-  font-family: "PT Sans Bold", sans-serif;
-}
-
-h2 {
+/*h1 {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
-  font-family: "PT Sans Bold", sans-serif;
-}
-.main-header {
-  /* Только для оформления сетки */
-  outline: 1px solid green;
-}
+}*/
+
+/*h2 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}*/
 
 .container {
-  width: 1200px;
+  min-width: 768px;
+  max-width: 1200px;
   margin: 0 auto;
   /* Только для оформления сетки */
   outline: 1px solid pink;
@@ -39,27 +35,12 @@ h2 {
   clear: both;
 }
 
-.container2 {
-  width: 1056px;
-  margin: 0 auto;
-  /* Только для оформления сетки */
-  outline: 3px solid orange;
-}
-
-.container2::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .header-top {
-  font-size: 0;
-  /* Только для оформления сетки */
-  outline: 1px solid blue;
+  color: #000000;
 }
 
 .main-nav {
-  font-size: 0;
+  position: relative;
 }
 
 .main-nav::after {
@@ -68,133 +49,442 @@ h2 {
   clear: both;
 }
 
-.main-nav-left a {
-  width: 20%;
-  min-height: 56px;
-  font-size: 14px;
+.main-nav-left {
+  width: 40%;
   float: left;
-  /* Только для оформления сетки */
-  outline: 1px solid red;
 }
 
-.main-nav-right a {
-  width: 20%;
-  min-height: 56px;
-  font-size: 14px;
+.main-nav-right {
+  width: 40%;
   float: right;
-  /* Только для оформления сетки */
-  outline: 1px solid red;
+}
+
+.main-nav-left::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-nav-right::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-nav-left div {
+  float: left;
+  width: 50%;
+  height: 56px;
+}
+
+.main-nav-right div {
+  float: right;
+  width: 50%;
+  height: 56px;
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  display: block;
+  margin: 16px 0;  /* если делать padding, то активным становится весь блок, а не только текст ссылки. */
+  text-align: center;
+}
+
+.menu a:hover {
+  color: #81b3d2;
+}
+
+.menu a:active {
+  color: #766357;
 }
 
 .header-logo {
   width: 138px;
   position: absolute;
-  left: 556px;
+  left: 50%;
+  margin-left: -69px;
 }
 
 .header-promo {
   width: 100%;
   height: 509px;
-}
-
-main {
-  /* Только для оформления сетки */
-  outline: 1px solid green;
-}
-
-.features {
-  min-height: 840px;
-  margin-bottom: -20px;
-  /* Только для оформления сетки */
-  outline: 1px solid blue;
+  background-image: url(../img/promoframe.png), url(../img/welcometosedona.png), url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom, center, center;
+  background-size: 100%, auto, 100%;
 }
 
 .intro {
   height: 215px;
-  margin-top: -16px;
-  /* Только для оформления сетки */
-  outline: 1px solid grey;
+}
+
+.intro-main {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  padding-top: 62px;
+  padding-left: 380px;
+  padding-right: 380px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.intro-caption {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.features {
+  min-height: 840px;
+  font-size: 0;
 }
 
 .feature {
   width: 33.333%;
   height: 256px;
-  /* Только для оформления сетки */
-  outline: 1px solid red;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.feature-blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.feature-gray {
+  background-color: #eeeeee;
+}
+
+.feature-heading {
+  padding-top: 50px;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.feature-number {
+  padding-top: 28px;
+}
+
+.feature-caption {
+  padding-top: 28px;
+}
+
+.feature-heading-one {
+  padding-left: 139px;
+  padding-right: 139px;
+  color: #ffffff;
+}
+
+.feature-caption-one {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.feature-image {
+  width: 66.666%;
+  height: 256px;
 }
 
 .guide {
   height: 330px;
 }
 
-.feature-image {
-  width: 66.666%;
-  height: 256px;
-  /* Только для оформления сетки */
-  outline: 1px solid red;
+.guide img {
+  padding-top: 61px;
+  padding-left: 162px;
+  padding-right: 162px;
+  padding-bottom: 32px;
 }
 
-.feature,
-.feature-image {
-  display: inline-block;
-  margin-right: -3px;
-  vertical-align: top;
+.guide .feature-heading {
+  padding-top: 0;
+}
+
+.guide-accomodation .feature-caption {
+  padding-left: 73px;
+  padding-right: 73px;
+}
+
+.guide-food .feature-caption {
+  padding-left: 58px;
+  padding-right: 58px;
+}
+
+.guide-souveniers .feature-caption {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.feature-heading-two {
+  color: #ffffff;
+}
+
+.heading-two-bottom {
+  padding-top: 0;
+}
+
+.feature-caption-two {
+  padding-left: 49px;
+  padding-right: 49px;
+}
+
+.feature-heading-three {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.feature-caption-three {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
+.feature-heading-four {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.feature-caption-four {
+  padding-left: 68px;
+  padding-right: 68px;
+}
+
+.feature-heading-five {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.feature-caption-five {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .promo {
   min-height: 290px;
-  /* Только для оформления сетки */
-  outline: 1px solid blue;
+  position: relative;
+}
+
+.promo-heading {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: bold;
+  padding-top: 58px;
+  text-align: center;
+  color: #000000;
+}
+
+.promo-caption {
+  line-height: 24px;
+  text-align: center;
+}
+
+.promo-caption-top {
+  padding-top: 33px;
+  padding-bottom: 4px;
+}
+
+.hotel-search-button {
+  width: 568px;
+  height: 86px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -284px;
+  background-color: #766357;
+}
+
+.hotel-search-button a {
+  display: block;
+  padding-top: 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.form-hotel-search {
+  width: 568px;
+  height: 395px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -284px;
+}
+
+.form-hotel-search input {
+  width: 346px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-left: 18px;
+}
+
+.form-hotel-search label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-left: 55px;
+}
+
+.form-hotel-search input.date-checkout {
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+
+.form-hotel-search input.date-checkin {
+  margin-top: 55px;
+}
+
+.form-hotel-search input.half-width {
+  width: 114px;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button-search {
+  width: 458px;
+  height: 58px;
+  border: none;
+  display: block;
+  margin: 55px auto;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .map {
   width: 100%;
   height: 593px;
-}
-
-.form-hotel-search {
-  width: 568px;
-  height: 481px;
-  position: absolute;
-  top: 2082px;
-  left: 356px;
-  /* Только для оформления сетки */
-  outline: 1px solid red;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-footer {
   font-size: 0;
   margin-top: -120px;
-  /* Только для оформления сетки */
-  outline: 1px solid green;
+  min-height: 120px;
+  background-image: url(../img/maplayer.png);
 }
 
 .insta {
-  width: 240px;
+  width: 20%;
   min-height: 120px;
-  /* Только для оформления сетки */
-  outline: 1px solid red;
+  margin-left: 72px;
+}
+
+.insta a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding-top: 48px;
 }
 
 .social {
-  width: 400px;
+  width: 33.333%;
   min-height: 120px;
   margin-left: 88px;
   margin-right: 88px;
-  /* Только для оформления сетки */
-  outline: 1px solid red;
+}
+
+.button-social {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+  margin-top: 36px;
+  position: relative;
+}
+
+.button-social:hover {
+  background-color: #669ec0;
+}
+
+.button-social::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.button-social-tw::before {
+  width: 17px;
+  height: 15px;
+  background-position: -10px -274px;
+}
+
+.button-social-fb::before {
+  width: 10px;
+  height: 19px;
+  background-position: -10px -94px;
+}
+
+.button-social-yt::before {
+  width: 20px;
+  height: 16px;
+  background-position: -10px -309px;
+}
+
+.button-social-tw {
+  margin-left: 124px;
+}
+
+.button-social-fb {
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .developers {
-  width: 240px;
+  width: 20%;
   min-height: 120px;
-  /* Только для оформления сетки */
-  outline: 1px solid red;
+  margin-right: 72px;
 }
 
-.insta,
-.social,
-.developers {
+.dev-ref-logo {
+  padding-top: 41px;
+}
+
+.dev-ref {
+  line-height: 26px;
+  color: #000000;
+  padding-left: 15px;
+  padding-right: 8px;
+}
+
+.dev {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-block {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
@@ -206,6 +496,13 @@ main {
   outline: 1px solid blue;
 }
 
+.criteria-form {
+  background-image: url(../img/filterbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #ffffff;
+}
+
 .filter {
   min-height: 217px;
   font-size: 14px;
@@ -215,12 +512,30 @@ main {
   outline: 1px solid red;
 }
 
+.filter-heading {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 29px;
+}
+
+.filter:first-child {
+  margin-left: 72px;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+}
+
+.filter:last-child {
+  margin-right: 72px;
+}
+
 .filter-infrustructure {
-  width: 241px;
+  width: 254px;
 }
 
 .filter-accomodation {
-  width: 287px;
+  width: 274px;
   margin-right: 200px;
 }
 
@@ -230,21 +545,47 @@ main {
 
 .result-sorting {
   font-size: 0;
+  height: 86px;
   /* Только для оформления сетки */
   outline: 1px solid blue;
+}
+
+.result-sorting-tools .result-heading,
+.result-heading a {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.result-sorting-tools {
+  float: left;
+  margin-left: 72px;
 }
 
 .result-sorting-tools div {
   min-height: 86px;
   display: inline-block;
   vertical-align: top;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
   /* Только для оформления сетки */
   outline: 1px solid red;
 }
 
-.result-sorting-tools {
-  float: left;
+.result-sorting-tools div a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.result-sorting-tools .active {
+  color: #81b3d2;
+}
+
+.sorting-button {
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-indicators div {
@@ -256,10 +597,22 @@ main {
   outline: 1px solid red;
 }
 
+.sorting-indicators {
+  margin-right: 72px;
+}
+
 article {
   min-height: 152px;
+  margin-left: 72px;
+  margin-right: 72px;
   /* Только для оформления сетки */
   outline: 1px solid blue;
+}
+
+article::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .result {
@@ -268,23 +621,29 @@ article {
 
 .result-image {
   width: 135px;
-  min-height: 152px;
+  height: 152px;
   float: left;
   /* Только для оформления сетки */
   outline: 1px solid red;
 }
 
 .result-image img {
-  margin-top: 32px;
+  margin-top: 31px;
 }
 
 .info-booking {
   width: 258px;
-  min-height: 152px;
+  height: 152px;
   float: left;
   margin-left: 30px;
   /* Только для оформления сетки */
   outline: 1px solid red;
+}
+
+.result-info {
+  width: 258px;
+  /* Только для оформления сетки */
+  outline: 1px solid purple;
 }
 
 .result-rating {
@@ -293,4 +652,139 @@ article {
   float: right;
   /* Только для оформления сетки */
   outline: 1px solid red;
+}
+
+.result-rating::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.accomodation-details {
+  width: 110px;
+  float: left;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.price-booking {
+  width: 142px;
+  float: right;
+  /* Только для оформления сетки */
+  outline: 1px solid red;
+}
+
+.result-button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.details {
+  background-color: #81b3d2;
+  width: 110px;
+  height: 27px;
+  text-align: center;
+  padding-top: 4px;
+  box-sizing: border-box;
+}
+
+.booking {
+  background-color: #766357;
+  width: 142px;
+  height: 27px;
+  text-align: center;
+  padding-top: 4px;
+  box-sizing: border-box;
+}
+
+/* со звездочками пока неправильно, потому что нужны отступы между ними, подумаю еще */
+
+.rating-image {
+  height: 17px;
+  background-image: url(../img/star.png);
+  float: right;
+}
+
+.rating-image-four {
+  width: 72px;
+}
+
+.rating-image-two {
+  width: 36px;
+}
+
+.rating-image-three {
+  width: 54px;
+}
+
+.rating-number {
+  color: #666666;
+  width: 111px;
+  height: 27px;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 5px;
+  box-sizing: border-box;
+  float: right;
+}
+
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -10px;
+}
+
+.sprite-checked {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -52px;
+}
+
+.sprite-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -10px -94px;
+}
+
+.sprite-fingerpoint {
+    width: 25px;
+    height: 30px;
+    background-position: -10px -133px;
+}
+
+.sprite-less {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -183px;
+}
+
+.sprite-more {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -206px;
+}
+
+.sprite-star {
+    width: 18px;
+    height: 17px;
+    background-position: -10px -237px;
+}
+
+.sprite-twitter {
+    width: 17px;
+    height: 15px;
+    background-position: -10px -274px;
+}
+
+.sprite-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -10px -309px;
 }

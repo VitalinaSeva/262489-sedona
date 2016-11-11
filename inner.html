@@ -3,38 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - внутренняя</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <div class="container2">
         <div class="header-top">
           <nav class="main-nav">
-            <div class="main-nav-left">
-              <a href="#">Информация</a>
-              <a href="#">Фото и видео</a>
+            <div class="nav-part main-nav-left">
+              <div class="menu"><a href="#">Информация</a></div>
+              <div class="menu"><a href="#">Фото и видео</a></div>
             </div>
             <div class="header-logo">
               <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
             </div>
-            <div class="main-nav-right">
-              <a href="#">Карта штата</a>
-              <a href="#">Гостиницы</a>
+            <div class="nav-part main-nav-right">
+              <div class="menu"><a href="#">Гостиницы</a></div>
+              <div class="menu"><a href="#">Карта штата</a></div>
             </div>
           </nav>
         </div>
-      </div>
       </div>
     </header>
 
     <main>
       <div class="criteria">
         <div class="container">
-          <div class="container2">
-          <form action="#" method="get">
+          <form class="criteria-form" action="#" method="get">
             <div class="filter filter-infrustructure">
-              <h3>Инфраструктура:</h3>
+              <div class="filter-heading">Инфраструктура:</div>
               <input type="checkbox" name="pool" id="pool" checked>
               <label for="pool">Бассейн</label>
               <input type="checkbox" name="parking" id="parking">
@@ -43,7 +42,7 @@
               <label for="wi-fi">Wi-Fi</label>
             </div>
             <div class="filter filter-accomodation">
-              <h3>Тип жилья:</h3>
+              <div class="filter-heading">Тип жилья:</div>
               <input type="checkbox" name="hotel" id="hotel" checked>
               <label for="hotel">Гостиница</label>
               <input type="checkbox" name="motel" id="motel" checked>
@@ -51,9 +50,8 @@
               <input type="checkbox" name="apartment" id="apartment" checked>
               <label for="apartment">Апартаменты</label>
             </div>
-
             <div class=" filter filter-price">
-              <h3>Стоимость в сутки (Р):</h3>
+              <div class="filter-heading">Стоимость в сутки (Р):</div>
               <div class="price price-min">
                 от 0
               </div>
@@ -70,7 +68,6 @@
                 <a class="show">Показать</a>
               </div>
             </div>
-          </div>
             </div>
           </form>
         </div>
@@ -78,83 +75,65 @@
 
       <div class="result-sorting">
         <div class="container">
-          <div class="container2">
           <div class="result-sorting-tools">
-            <div><h2>Найдено: 3</h2></div>
+            <div class="result-heading">Найдено: 3</div>
             <div>Сортировка:</div>
-            <div class="active">По цене</div>
-            <div><a href="#" class="sorting-button">По типу</a></div>
-            <div><a href="#" class="sorting-button">По рейтингу</a></div>
+            <div><a class="active" href="#">По цене</a></div>
+            <div><a class="sorting-button" href="#">По типу</a></div>
+            <div><a class="sorting-button" href="#">По рейтингу</a></div>
           </div>
           <div class="sorting-indicators">
             <div class="sorting-min active"></div>
             <div class="sorting-max"></div>
           </div>
         </div>
-        </div>
       </div>
 
       <div class="result">
         <div class="container">
-          <div class="container2">
           <article class="result-item">
-            <div class="result-image">
-              <img src="img/hotelamara.jpg" width="135" height="90" alt="Amara Resort and Spa">
-            </div>
-            <div class="info-booking">
-              <div class="result-info">
-                <h2><a href="#">Amara Resort &amp; Spa</a></h2>
-                <div class="accomodation-price">
-                  <span class="result-accomodation">Гостиница</span>
-                  <span class="result-price">От 3 500 Р.</span>
+
+                <div class="result-image">
+                  <img src="img/hotelamara.jpg" width="135" height="90" alt="Amara Resort and Spa">
                 </div>
-              </div>
-              <div class="details-booking">
-                  <div class="details">
-                    <a href="#">Подробнее</a>
+                <div class="info-booking">
+                  <div class="result-heading"><a href="#">Amara Resort &amp; Spa</a></div>
+                  <div class="result-info">
+                    <div class="accomodation-details">
+                      <span class="result-accomodation">Гостиница</span>
+                      <div class="result-button details"><a href="#">Подробнее</a></div>
+                    </div>
+                    <div class="price-booking">
+                      <span class="result-price">От 3 500 Р.</span>
+                      <div class="result-button booking"><a href="#">Забронировать</a></div>
+                    </div>
                   </div>
-                  <div class="booking">
-                    <a href="#">Забронировать</a>
-                  </div>
-              </div>
-          </div>
-            <div class="result-rating">
-              <div class="rating-image">
-                <img class="rating-image-4" src="img/star.png" width="18" height="17" alt="Рейтинг 4 звездочки">
-              </div>
-              <div class="rating-number">
-                Рейтинг: 8,5
-              </div>
-            </div>
+                </div>
+                <div class="result-rating">
+                  <div class="rating-image rating-image-four"></div>
+                  <div class="rating-number">Рейтинг: 8,5</div>
+                </div>
           </article>
           <article class="result-item">
             <div class="result-image">
               <img src="img/hoteldesert.jpg" width="135" height="90" alt="Desert Quail Inn">
             </div>
             <div class="info-booking">
-            <div class="result-info">
-              <h2><a href="#">Desert Quail Inn</a></h2>
-              <div class="accomodation-price">
+              <div class="result-heading"><a href="#">Desert Quail Inn</a></div>
+              <div class="result-info">
+              <div class="accomodation-details">
                 <span class="result-accomodation">Мотель</span>
-                <span class="result-price">От 2 000 Р.</span>
+                <div class="result-button details"><a href="#">Подробнее</a></div>
               </div>
-              <div class="details-booking">
-                <div class="details">
-                  <a href="#">Подробнее</a>
-                </div>
-                <div class="booking">
-                  <a href="#">Забронировать</a>
-                </div>
+              <div class="price-booking">
+                  <span class="result-price">От 2 000 Р.</span>
+                  <div class="result-button booking"><a href="#">Забронировать</a></div>
+              </div>
               </div>
             </div>
-          </div>
             <div class="result-rating">
-              <div class="rating-image">
-                <img class="rating-image-2" src="img/star.png" width="18" height="17" alt="Рейтинг 2 звездочки">
-              </div>
-              <div class="rating-number">
-                Рейтинг: 8,9
-              </div>
+              <div class="rating-image rating-image-two"></div>
+              <div class="rating-number">Рейтинг: 8,9</div>
             </div>
           </article>
           <article class="result-item">
@@ -162,56 +141,42 @@
               <img src="img/hotelvillas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             </div>
             <div class="info-booking">
-            <div class="result-info">
-              <h2><a href="#">Villas at Poco Diablo</a></h2>
-              <div class="accomodation-price">
+              <div class="result-heading"><a href="#">Villas at Poco Diablo</a></div>
+              <div class="result-info">
+              <div class="accomodation-details">
                 <span class="result-accomodation">Апартаменты</span>
-                <span class="result-price">От 4 000 Р.</span>
+                <div class="result-button details"><a href="#">Подробнее</a></div>
               </div>
-              <div class="details-booking">
-                <div class="details">
-                  <a href="#">Подробнее</a>
-                </div>
-                <div class="booking">
-                  <a href="#">Забронировать</a>
-                </div>
+              <div class="price-booking">
+                  <span class="result-price">От 4 000 Р.</span>
+                  <div class="result-button booking"><a href="#">Забронировать</a></div>
               </div>
             </div>
           </div>
             <div class="result-rating">
-              <div class="rating-image">
-                <img class="rating-image-3" src="img/star.png" width="18" height="17" alt="Рейтинг 3 звездочки">
-              </div>
-              <div class="rating-number">
-                Рейтинг: 9,2
-              </div>
+              <div class="rating-image rating-image-three"></div>
+              <div class="rating-number">Рейтинг: 9,2</div>
             </div>
           </article>
         </div>
-        </div>
-      </div>
     </main>
 
     <footer class="main-footer">
       <div class="container">
-        <div class="container2">
-        <div class="insta">
+        <div class="footer-block insta">
           <a href="#">#visitsedona</a>
         </div>
-        <div class="social">
-          <a class="button button-social" href="#">Твиттер</a>
-          <a class="button button-social" href="#">Фейсбук</a>
-          <a class="button button-social" href="#">YouTube</a>
+        <div class="footer-block social">
+          <a class="button-social button-social-tw" href="#">Твиттер</a>
+          <a class="button-social button-social-fb" href="#">Фейсбук</a>
+          <a class="button-social button-social-yt" href="#">YouTube</a>
         </div>
-        <div class="developers">
-          <div class="ref">
-            Website by
-          </div>
-          <div class="developers-logo">
-            <img src="img/htmlacademy.png" width="113" height="39" alt="HTML Академия">
+        <div class="footer-block developers">
+          <div class="dev-ref-logo">
+            <div class="dev dev-ref">Website by</div>
+            <img class="dev dev-logo" src="img/htmlacademy.png" width="113" height="39" alt="HTML Академия">
           </div>
         </div>
-      </div>
       </div>
     </footer>
   </body>
