@@ -3,162 +3,129 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <div class="header-top">
-          <div class="container2">
           <nav class="main-nav">
-            <div class="main-nav-left">
-              <a href="#">Информация</a>
-              <a href="#">Фото и видео</a>
+            <div class="nav-part main-nav-left">
+              <div class="menu"><a href="#">Информация</a></div>
+              <div class="menu"><a href="#">Фото и видео</a></div>
             </div>
             <div class="header-logo">
               <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
             </div>
-            <div class="main-nav-right">
-              <a href="#">Карта штата</a>
-              <a href="#">Гостиницы</a>
+            <div class="nav-part main-nav-right">
+              <div class="menu"><a href="#">Гостиницы</a></div>
+              <div class="menu"><a href="#">Карта штата</a></div>
             </div>
           </nav>
         </div>
+        <div class="header-promo"></div>
         </div>
-        <div class="header-promo">
-          <img src="img/welcometosedona.png" width="1200" height="509" alt="Добро пожаловать в Седону!">
-        </div>
-      </div>
     </header>
     <main>
       <div class="container">
-        <section class="features">
             <div class="intro">
-              <h2 class="main">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h2>
-              <div class="caption">
-                Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
-              </div>
+              <div class="intro-main">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</div>
+              <div class="intro-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</div>
             </div>
-            <div class="feature blue">
-              <h2>Настоящий городок!</h2>
-              <div class="feature-number">
-                №1
-              </div>
-              <div class="caption">
-                Седона &ndash; не аттракцион для туристов, там течет своя жизнь
-              </div>
+        <section class="features">
+            <div class="feature feature-blue">
+              <div class="feature-heading feature-heading-one">Настоящий городок</div>
+              <div class="feature-number">№1</div>
+              <div class="feature-caption feature-caption-one">Седона &ndash; не аттракцион для туристов, там течет своя жизнь</div>
             </div>
-            <div class="feature-image">
+            <div class="feature feature-image">
               <img class="feature-image-one" src="img/truecity.jpg" width="800" height="256" alt="Городок Седона">
             </div>
             <div class="feature guide guide-accomodation">
               <img src="img/iconhouse.png" width="75" height="72" alt="Жилье">
-              <h2>Жилье</h2>
-              <div class="caption">
-                Рекомендуем пожить в настоящем мотеле, все как в кино!
-              </div>
+              <div class="feature-heading">Жилье</div>
+              <div class="feature-caption">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
             </div>
             <div class="feature guide guide-food">
               <img src="img/iconfood.png" width="74" height="70" alt="Еда">
-              <h2>Еда</h2>
-              <div class="caption">
-                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-              </div>
+              <div class="feature-heading">Еда</div>
+              <div class="feature-caption">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</div>
             </div>
             <div class="feature guide guide-souveniers">
               <img src="img/icongift.png" width="64" height="76" alt="Сувениры">
-              <h2>Сувениры</h2>
-              <div class="caption">
-                Не только китайского, но и местного производства!
-              </div>
+              <div class="feature-heading">Сувениры</div>
+              <div class="feature-caption">Не только китайского, но и местного производства!</div>
             </div>
-            <div class="feature-image">
+            <div class="feature feature-image">
               <img class="feature-image-two" src="img/devilsbridge.jpg" width="800" height="256" alt="Мост Дьявола">
             </div>
-            <div class="feature blue">
-              <h2>Там есть мост дьявола</h2>
-              <div class="feature-number">
-                №2
-              </div>
-              <div class="caption">
-                Да, по нему можно пройти! Если конечно вы осмелитесь
-              </div>
+            <div class="feature feature-blue">
+              <div class="feature-heading feature-heading-two">Там есть</div>
+              <div class="feature-heading feature-heading-two heading-two-bottom">мост дьявола</div>
+              <div class="feature-number">№2</div>
+              <div class="feature-caption feature-caption-two">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
             </div>
-            <div class="feature gray">
-              <h2>Небольшая площадь</h2>
-              <div class="feature-number">
-                №3
-              </div>
-              <div class="caption">
-                Все достопримечательности находятся очень близко
-              </div>
+            <div class="feature feature-gray">
+              <div class="feature-heading feature-heading-three">Небольшая площадь</div>
+              <div class="feature-number">№3</div>
+              <div class="feature-caption feature-caption-three">Все достопримечательности находятся очень близко</div>
             </div>
-            <div class="feature gray">
-              <h2>Красивая дорога</h2>
-              <div class="feature-number">
-                №4
-              </div>
-              <div class="caption">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </div>
+            <div class="feature feature-gray">
+              <div class="feature-heading feature-heading-four">Красивая дорога</div>
+              <div class="feature-number">№4</div>
+              <div class="feature-caption feature-caption-four">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
             </div>
-            <div class="feature gray">
-              <h2>Мало туристов</h2>
-              <div class="feature-number">
-                №5
-              </div>
-              <div class="caption">
-                Большинство едет в Гранд Каньон и толпится там
-              </div>
+            <div class="feature feature-gray">
+              <div class="feature-heading feature-heading-five">Мало туристов</div>
+              <div class="feature-number">№5</div>
+              <div class="feature-caption feature-caption-five">Большинство едет в Гранд Каньон и толпится там</div>
             </div>
         </section>
         <div class="promo">
-          <h1>Заинтересовались?</h1>
-          <div class="caption">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-          </div>
-        </div>
-        <div class="map">
-          <img class="map-image" src="img/map.jpg" width="1200" height="593" alt="Где мы находимся">
-        </div>
-        <div class="form-hotel-search">
-          <form action="#" method="post">
-            <h2>Поиск гостиницы в Седоне</h2>
-            <label for="checkin">Дата заезда</label>
-            <input type="text" value="24 апреля 2016" name="date-checkin" id="checkin">
-            <label for="checkout">Дата выезда</label>
-            <input type="text" value="4 июля 2016" name="date-checkout" id="checkout">
-            <div class="half-width">
-              <label for="adult">Взрослые</label>
-              <input type="number" value="2" name="two" id="adult">
-              <label for="children">Дети</label>
-              <input type="number" value="0" name="zero" id="children">
-            </div>
+          <div class="promo-heading">Заинтересовались?</div>
+          <div class="promo-caption promo-caption-top">Укажите предполагаемые даты поездки,</div>
+          <div class="promo-caption">и мы покажем вам лучшие предложения гостиниц в Седоне</div>
+          <div class="hotel-search-button"><a href="#">Поиск гостиницы в Седоне</a></div>
+        <div class="hotel">
+
+          <form class="form-hotel-search" action="#" method="post">
+            <label for="checkin">Дата заезда:</label>
+            <input type="text" value="24 апреля 2016" class="date-checkin" name="date-checkin" id="checkin">
+            <label for="checkout">Дата выезда:</label>
+            <input type="text" value="4 июля 2016" class="date-checkout" name="date-checkout" id="checkout">
+
+              <label for="adult">Взрослые:</label>
+              <input type="number" value="2" class="half-width" name="two" id="adult">
+              <label for="children">Дети:</label>
+              <input type="number" value="0" class="half-width" name="zero" id="children">
+
             <button type="submit" class="button button-search">Найти</button>
+
           </form>
         </div>
+
+        </div>
+        <div class="map"></div>
       </div>
     </main>
     <footer class="main-footer">
       <div class="container">
-        <div class="container2">
-        <div class="insta">
+        <div class="footer-block insta">
           <a href="#">#visitsedona</a>
         </div>
-        <div class="social">
-          <a class="button button-social" href="#">Твиттер</a>
-          <a class="button button-social" href="#">Фейсбук</a>
-          <a class="button button-social" href="#">YouTube</a>
+        <div class="footer-block social">
+          <a class="button-social button-social-tw" href="#">Твиттер</a>
+          <a class="button-social button-social-fb" href="#">Фейсбук</a>
+          <a class="button-social button-social-yt" href="#">YouTube</a>
         </div>
-        <div class="developers">
-          <div class="ref">
-            Website by
-          </div>
-          <div class="developers-logo">
-            <img src="img/htmlacademy.png" width="113" height="39" alt="HTML Академия">
+        <div class="footer-block developers">
+          <div class="dev-ref-logo">
+            <div class="dev dev-ref">Website by</div>
+            <img class="dev dev-logo" src="img/htmlacademy.png" width="113" height="39" alt="HTML Академия">
           </div>
         </div>
-      </div>
       </div>
     </footer>
   </body>
