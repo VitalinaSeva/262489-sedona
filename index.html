@@ -17,7 +17,7 @@
               <div class="menu"><a href="#">Фото и видео</a></div>
             </div>
             <div class="header-logo">
-              <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+              <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
             </div>
             <div class="nav-part main-nav-right">
               <div class="menu"><a href="#">Гостиницы</a></div>
@@ -37,7 +37,7 @@
         <section class="features">
             <div class="feature feature-blue">
               <div class="feature-heading feature-heading-one">Настоящий городок</div>
-              <div class="feature-number">№1</div>
+              <div class="feature-number feature-number-blue"><span>№1</span></div>
               <div class="feature-caption feature-caption-one">Седона &ndash; не аттракцион для туристов, там течет своя жизнь</div>
             </div>
             <div class="feature feature-image">
@@ -64,22 +64,22 @@
             <div class="feature feature-blue">
               <div class="feature-heading feature-heading-two">Там есть</div>
               <div class="feature-heading feature-heading-two heading-two-bottom">мост дьявола</div>
-              <div class="feature-number">№2</div>
+              <div class="feature-number feature-number-blue"><span>№2</span></div>
               <div class="feature-caption feature-caption-two">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
             </div>
             <div class="feature feature-gray">
               <div class="feature-heading feature-heading-three">Небольшая площадь</div>
-              <div class="feature-number">№3</div>
+              <div class="feature-number"><span>№3</span></div>
               <div class="feature-caption feature-caption-three">Все достопримечательности находятся очень близко</div>
             </div>
             <div class="feature feature-gray">
               <div class="feature-heading feature-heading-four">Красивая дорога</div>
-              <div class="feature-number">№4</div>
+              <div class="feature-number"><span>№4</span></div>
               <div class="feature-caption feature-caption-four">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
             </div>
             <div class="feature feature-gray">
               <div class="feature-heading feature-heading-five">Мало туристов</div>
-              <div class="feature-number">№5</div>
+              <div class="feature-number"><span>№5</span></div>
               <div class="feature-caption feature-caption-five">Большинство едет в Гранд Каньон и толпится там</div>
             </div>
         </section>
@@ -88,24 +88,19 @@
           <div class="promo-caption promo-caption-top">Укажите предполагаемые даты поездки,</div>
           <div class="promo-caption">и мы покажем вам лучшие предложения гостиниц в Седоне</div>
           <div class="hotel-search-button"><a href="#">Поиск гостиницы в Седоне</a></div>
-        <div class="hotel">
-
-          <form class="form-hotel-search" action="#" method="post">
-            <label for="checkin">Дата заезда:</label>
-            <input type="text" value="24 апреля 2016" class="date-checkin" name="date-checkin" id="checkin">
-            <label for="checkout">Дата выезда:</label>
-            <input type="text" value="4 июля 2016" class="date-checkout" name="date-checkout" id="checkout">
-
+          <div class="hotel">
+            <form class="form-hotel-search" action="#" method="post">
+              <label for="checkin">Дата заезда:</label>
+              <input type="text" value="24 апреля 2016" class="date-checkin" name="date-checkin" id="checkin">
+              <label for="checkout">Дата выезда:</label>
+              <input type="text" value="4 июля 2016" class="date-checkout" name="date-checkout" id="checkout">
               <label for="adult">Взрослые:</label>
-              <input type="number" value="2" class="half-width" name="two" id="adult">
+              <input type="text" value="2" class="half-width" name="two" id="adult">
               <label for="children">Дети:</label>
-              <input type="number" value="0" class="half-width" name="zero" id="children">
-
-            <button type="submit" class="button button-search">Найти</button>
-
-          </form>
-        </div>
-
+              <input type="text" value="0" class="half-width" name="zero" id="children">
+              <button type="submit" class="button button-search">Найти</button>
+            </form>
+          </div>
         </div>
         <div class="map"></div>
       </div>
