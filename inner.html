@@ -17,7 +17,7 @@
               <div class="menu"><a href="#">Фото и видео</a></div>
             </div>
             <div class="header-logo">
-              <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+              <a href="index.html"><img src="img/logopic.png" width="138" height="70" alt="Логотип"></a>
             </div>
             <div class="nav-part main-nav-right">
               <div class="menu"><a href="#">Гостиницы</a></div>
@@ -37,7 +37,7 @@
               <input type="checkbox" name="pool" id="pool" checked>
               <label for="pool">Бассейн</label>
               <input type="checkbox" name="parking" id="parking">
-              <label for="pool">Парковка</label>
+              <label for="parking">Парковка</label>
               <input type="checkbox" name="internet" id="wi-fi">
               <label for="wi-fi">Wi-Fi</label>
             </div>
@@ -51,22 +51,22 @@
               <label for="apartment">Апартаменты</label>
             </div>
             <div class=" filter filter-price">
+
               <div class="filter-heading">Стоимость в сутки (Р):</div>
-              <div class="price price-min">
-                от 0
+              <div class="price-indicator">
+                <label class="price price-min">от <input type="text" name="price-min" value="0"></label>
+                <label class="price price-max">до <input type="text" name="price-max" value="3000"></label>
               </div>
-              <div class="price price-max">
-                до 3000
+              <div class="range-controlls">
+                <div class="scrolls">
+                  <div class="scroll scroll-left"></div>
+                  <div class="scroll scroll-right"></div>
+                </div>
+                <div class="scale"></div>
+                <div class="scale-progress"></div>
+                <button class="show-button" type="submit">Показать</button>
               </div>
-              <div class="scroll">
-                <div class="scroll-left"></div>
-                <div class="scroll-right"></div>
-              </div>
-              <div class="scale"></div>
-              <div class="progress-scale"></div>
-              <div class="show-button">
-                <a class="show">Показать</a>
-              </div>
+
             </div>
             </div>
           </form>
@@ -75,24 +75,25 @@
 
       <div class="result-sorting">
         <div class="container">
+          <div class="result-tools">
           <div class="result-sorting-tools">
             <div class="result-heading">Найдено: 3</div>
-            <div>Сортировка:</div>
-            <div><a class="active" href="#">По цене</a></div>
+            <div class="sorting">Сортировка:</div>
+            <div class="prime"><a class="active sorting-button">По цене</a></div>
             <div><a class="sorting-button" href="#">По типу</a></div>
             <div><a class="sorting-button" href="#">По рейтингу</a></div>
           </div>
           <div class="sorting-indicators">
-            <div class="sorting-min active"></div>
-            <div class="sorting-max"></div>
+            <div class="sorting-indicator sorting-min active"></div>
+            <div class="sorting-indicator sorting-max"></div>
           </div>
+        </div>
         </div>
       </div>
 
       <div class="result">
         <div class="container">
           <article class="result-item">
-
                 <div class="result-image">
                   <img src="img/hotelamara.jpg" width="135" height="90" alt="Amara Resort and Spa">
                 </div>
@@ -100,11 +101,11 @@
                   <div class="result-heading"><a href="#">Amara Resort &amp; Spa</a></div>
                   <div class="result-info">
                     <div class="accomodation-details">
-                      <span class="result-accomodation">Гостиница</span>
+                      <div class="result-accomodation">Гостиница</div>
                       <div class="result-button details"><a href="#">Подробнее</a></div>
                     </div>
                     <div class="price-booking">
-                      <span class="result-price">От 3 500 Р.</span>
+                      <div class="result-price">От 3 500 Р.</div>
                       <div class="result-button booking"><a href="#">Забронировать</a></div>
                     </div>
                   </div>
@@ -122,11 +123,11 @@
               <div class="result-heading"><a href="#">Desert Quail Inn</a></div>
               <div class="result-info">
               <div class="accomodation-details">
-                <span class="result-accomodation">Мотель</span>
+                <div class="result-accomodation">Мотель</div>
                 <div class="result-button details"><a href="#">Подробнее</a></div>
               </div>
               <div class="price-booking">
-                  <span class="result-price">От 2 000 Р.</span>
+                  <div class="result-price">От 2 000 Р.</div>
                   <div class="result-button booking"><a href="#">Забронировать</a></div>
               </div>
               </div>
@@ -144,11 +145,11 @@
               <div class="result-heading"><a href="#">Villas at Poco Diablo</a></div>
               <div class="result-info">
               <div class="accomodation-details">
-                <span class="result-accomodation">Апартаменты</span>
+                <div class="result-accomodation">Апартаменты</div>
                 <div class="result-button details"><a href="#">Подробнее</a></div>
               </div>
               <div class="price-booking">
-                  <span class="result-price">От 4 000 Р.</span>
+                  <div class="result-price">От 4 000 Р.</div>
                   <div class="result-button booking"><a href="#">Забронировать</a></div>
               </div>
             </div>
@@ -174,10 +175,11 @@
         <div class="footer-block developers">
           <div class="dev-ref-logo">
             <div class="dev dev-ref">Website by</div>
-            <img class="dev dev-logo" src="img/htmlacademy.png" width="113" height="39" alt="HTML Академия">
+            <div class="dev dev-logo"></div>
           </div>
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
