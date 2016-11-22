@@ -1,6 +1,6 @@
 var link = document.querySelector(".search-button-link");
 var popup = document.querySelector(".form-hotel-search");
-var close = document.querySelector("iframe");
+var close = document.querySelector(".map");
 var form = document.querySelector(".form-hotel-search");
 var checkin = document.querySelector("[name=checkin]");
 var checkout = document.querySelector("[name=checkout]");
