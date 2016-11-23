@@ -113,8 +113,8 @@ body .container {
   height: 509px;
   background-image: url(../img/promoframe.png), url(../img/welcometosedona.png), url(../img/background.jpg);
   background-repeat: no-repeat;
-  background-position: bottom, center, center;
-  background-size: 100%, auto, 100%;
+  background-position: bottom, center center, center;
+  background-size: 100%, auto, cover;
 }
 
 .intro {
@@ -512,6 +512,10 @@ body .container {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: -120px;
+}
+
+iframe {
+  width: 100%;
 }
 
 /* Начало внутренней страницы */
