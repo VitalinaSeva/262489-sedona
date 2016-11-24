@@ -129,7 +129,9 @@ body .container {
   font-size: 21px;
   color: #000000;
   font-weight: bold;
-  padding: 0 380px;
+}
+
+.intro-main-bottom {
   margin-bottom: 20px;
 }
 
@@ -170,7 +172,11 @@ body .container {
 }
 
 .feature-heading-truecity {
-  padding: 0 70px;
+  margin: 0;
+}
+
+.feature-heading-truecity-bottom {
+  margin-bottom: 28px;
 }
 
 .feature-heading-bridge {
@@ -188,7 +194,7 @@ body .container {
 }
 
 .feature-heading-square {
-  padding: 0 50px;
+  margin: 0;
 }
 
 .feature-caption-square {
@@ -196,7 +202,11 @@ body .container {
 }
 
 .feature-heading-road {
-  padding: 0 70px;
+  margin: 0;
+}
+
+.feature-heading-road-bottom {
+  margin-bottom: 28px;
 }
 
 .feature-caption-road {
@@ -204,7 +214,11 @@ body .container {
 }
 
 .feature-heading-tourists {
-  padding: 0 80px;
+  margin: 0;
+}
+
+.feature-heading-tourists-bottom {
+  margin-bottom: 28px;
 }
 
 .feature-number span {
@@ -527,7 +541,7 @@ iframe {
 .criteria-form {
   background-image: url(../img/filterbackground.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   color: #ffffff;
   padding-top: 30px;
   padding-left: 72px;
@@ -952,20 +966,18 @@ article:nth-child(1) {
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
-  padding-left: 72px;
-  padding-right: 72px;
 }
 
 .footer-block {
+  width: 33%;
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
+  text-align: center;
 }
 
 .insta {
-  width: 240px;
   min-height: 120px;
-  margin-right: 88px;
 }
 
 .insta a {
@@ -975,16 +987,12 @@ article:nth-child(1) {
   line-height: 26px;
   font-weight: bold;
   display: block;
-  text-align: center;
   padding-top: 48px;
   cursor: pointer;
 }
 
 .social {
-  width: 400px;
   min-height: 120px;
-  text-align: center;
-  margin-right: 88px;
   padding-top: 36px;
   box-sizing: border-box;
 }
@@ -1041,10 +1049,8 @@ article:nth-child(1) {
 }
 
 .developers {
-  width: 240px;
   min-height: 120px;
   cursor: pointer;
-  text-align: center;
   padding-top: 40px;
   box-sizing: border-box;
 }
