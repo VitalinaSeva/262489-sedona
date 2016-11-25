@@ -368,6 +368,7 @@ body .container {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
+  height: 38px;
   line-height: 38px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -409,6 +410,7 @@ body .container {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
+  height: 38px;
   line-height: 38px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -600,16 +602,15 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .filter-infrustructure {
-  width: 254px;
+  width: 24%;
 }
 
 .filter-accomodation {
-  width: 274px;
-  margin-right: 200px;
+  width: 45%;
 }
 
 .filter-price {
-  width: 328px;
+  width: 31%;
   position: relative;
 }
 
@@ -640,6 +641,7 @@ input[type="checkbox"]:checked + label::before {
   width: 50px;
   margin: 0;
   color: inherit;
+  height: 38px;
   font: inherit;
   background: none;
   border: none;
